@@ -60,10 +60,19 @@ a {
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 0.02em;
+
+    color: #e7edf5;
+
+    transition: 0.25s ease;
+}
+
+.logo:hover {
+    color: #38bdf8;
 }
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 28px;
 }
 
@@ -117,10 +126,6 @@ a {
     max-width: 1050px;
 }
 
-
-
-/* HERO EYEBROW */
-
 .eyebrow {
     color: #38bdf8;
 
@@ -135,9 +140,6 @@ a {
     margin-bottom: 18px;
 }
 
-
-/* MAIN NAME */
-
 .hero h1 {
     font-size: clamp(3rem, 6vw, 5.5rem);
 
@@ -148,9 +150,6 @@ a {
     letter-spacing: -0.04em;
 }
 
-
-/* JOB TITLE */
-
 .hero h2 {
     font-size: clamp(1.2rem, 3vw, 2rem);
 
@@ -160,9 +159,6 @@ a {
 
     margin-bottom: 24px;
 }
-
-
-/* HERO DESCRIPTION */
 
 .hero-description {
     max-width: 720px;
@@ -297,6 +293,8 @@ a {
 
 .about-card h3 {
     margin-bottom: 18px;
+
+    color: #e7edf5;
 }
 
 .about-card p {
@@ -350,6 +348,8 @@ a {
     font-size: 1.35rem;
 
     margin-bottom: 12px;
+
+    color: #e7edf5;
 }
 
 .project-card p {
@@ -416,6 +416,8 @@ a {
 
 .research-card h3 {
     margin-bottom: 12px;
+
+    color: #e7edf5;
 }
 
 .research-card p {
@@ -443,6 +445,14 @@ a {
     border-radius: 14px;
 
     border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(56, 189, 248, 0.35);
 }
 
 .skill-box h3 {
@@ -460,8 +470,6 @@ a {
    CONTACT
 ========================= */
 
-/* CONTACT HEADING */
-
 .contact-heading {
     text-align: center;
 }
@@ -470,9 +478,6 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* CONTACT BOX */
 
 .contact-box {
     width: 100%;
@@ -491,9 +496,6 @@ a {
     text-align: center;
 }
 
-
-/* CONTACT BUTTON GROUP */
-
 .contact-buttons {
     display: flex;
 
@@ -505,19 +507,13 @@ a {
     flex-wrap: wrap;
 }
 
-
-/* CONTACT BUTTON SIZE */
-
 .contact-buttons .btn {
     white-space: nowrap;
 
-    min-width: 105px;
+    min-width: 110px;
 
     text-align: center;
 }
-
-
-/* EMAIL BELOW BUTTONS */
 
 .contact-email {
     margin-top: 30px;
@@ -559,8 +555,6 @@ footer {
 
 @media (max-width: 800px) {
 
-    /* NAVIGATION */
-
     .nav-links {
         gap: 14px;
 
@@ -573,9 +567,6 @@ footer {
         white-space: nowrap;
     }
 
-
-    /* HERO */
-
     .hero {
         min-height: 80vh;
     }
@@ -584,15 +575,6 @@ footer {
         font-size: clamp(2.8rem, 12vw, 4.5rem);
     }
 
-    .top-second-name {
-        font-size: 1.15rem;
-
-        margin-bottom: 22px;
-    }
-
-
-    /* GRIDS */
-
     .about-grid,
     .project-grid,
     .research-grid,
@@ -600,15 +582,9 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
-    /* SECTIONS */
-
     .section {
         padding: 75px 0;
     }
-
-
-    /* CONTACT */
 
     .contact-box {
         padding: 30px 22px;
@@ -617,7 +593,6 @@ footer {
     .contact-buttons {
         gap: 12px;
     }
-
 }
 
 
@@ -632,9 +607,6 @@ footer {
         width: 92%;
     }
 
-
-    /* NAVIGATION */
-
     .nav-container {
         gap: 20px;
     }
@@ -642,9 +614,6 @@ footer {
     .logo {
         flex-shrink: 0;
     }
-
-
-    /* HERO */
 
     .hero h1 {
         font-size: 2.8rem;
@@ -657,13 +626,6 @@ footer {
     .hero-description {
         font-size: 1rem;
     }
-
-    .top-second-name {
-        font-size: 1.05rem;
-    }
-
-
-    /* CONTACT BUTTONS */
 
     .contact-buttons {
         display: grid;
@@ -683,13 +645,9 @@ footer {
         padding: 11px 14px;
     }
 
-
-    /* EMAIL */
-
     .contact-email {
         font-size: 0.95rem;
 
         word-break: break-word;
     }
-
 }
