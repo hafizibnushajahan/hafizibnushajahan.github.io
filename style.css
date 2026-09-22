@@ -13,7 +13,13 @@ html {
 }
 
 body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
     background: #07111f;
     color: #e7edf5;
     line-height: 1.6;
@@ -26,12 +32,18 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
+}
+
+strong {
+    color: #f0f5fb;
 }
 
 .container {
     width: min(1120px, 90%);
     margin: auto;
 }
+
 
 
 /* ==================================================
@@ -41,19 +53,28 @@ img {
 .navbar {
     position: sticky;
     top: 0;
+
     z-index: 1000;
+
     background: rgba(7, 17, 31, 0.92);
+
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.08);
 }
 
 .nav-container {
     width: min(1120px, 90%);
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -69,7 +90,9 @@ img {
 
 .nav-links a {
     color: #b8c4d6;
+
     font-size: 0.95rem;
+
     transition: 0.25s ease;
 }
 
@@ -78,26 +101,37 @@ img {
 }
 
 
+
 /* ==================================================
-   HERO
+   HOMEPAGE HERO
 ================================================== */
 
 .hero {
     min-height: 88vh;
+
     display: flex;
     align-items: center;
+
     position: relative;
+
     overflow: hidden;
 }
 
 .hero::before {
     content: "";
+
     position: absolute;
+
     width: 500px;
     height: 500px;
+
     border-radius: 50%;
-    background: rgba(56, 189, 248, 0.12);
+
+    background:
+        rgba(56, 189, 248, 0.12);
+
     filter: blur(100px);
+
     top: 0;
     right: -100px;
 }
@@ -109,40 +143,60 @@ img {
 
 .eyebrow {
     color: #38bdf8;
+
     font-weight: 600;
+
     letter-spacing: 0.12em;
+
     text-transform: uppercase;
+
     font-size: 0.85rem;
+
     margin-bottom: 18px;
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 6vw, 5.2rem);
+    font-size:
+        clamp(3rem, 6vw, 5.2rem);
+
     line-height: 1.05;
+
     margin-bottom: 20px;
+
     letter-spacing: -0.04em;
+
     white-space: nowrap;
 }
 
 .hero h2 {
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size:
+        clamp(1.2rem, 3vw, 2rem);
+
     font-weight: 500;
+
     color: #a9bad0;
+
     margin-bottom: 24px;
 }
 
 .hero-description {
     max-width: 720px;
+
     font-size: 1.1rem;
+
     color: #aab8ca;
+
     margin-bottom: 32px;
 }
 
 .hero-buttons {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 14px;
 }
+
 
 
 /* ==================================================
@@ -151,9 +205,13 @@ img {
 
 .btn {
     display: inline-block;
+
     padding: 12px 22px;
+
     border-radius: 9px;
+
     font-weight: 600;
+
     transition: 0.25s ease;
 }
 
@@ -164,18 +222,24 @@ img {
 
 .btn-primary:hover {
     transform: translateY(-2px);
+
     background: #7dd3fc;
 }
 
 .btn-secondary {
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+
     color: #eaf2fa;
 }
 
 .btn-secondary:hover {
     border-color: #38bdf8;
+
     color: #38bdf8;
 }
+
 
 
 /* ==================================================
@@ -196,22 +260,33 @@ img {
 
 .section-heading span {
     color: #38bdf8;
+
     font-size: 0.85rem;
+
     text-transform: uppercase;
+
     letter-spacing: 0.12em;
+
     font-weight: 600;
 }
 
 .section-heading h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size:
+        clamp(2rem, 5vw, 3rem);
+
+    line-height: 1.15;
+
     margin-top: 8px;
 }
 
 .section-heading p {
     color: #9dacbf;
+
     margin-top: 12px;
-    max-width: 700px;
+
+    max-width: 720px;
 }
+
 
 
 /* ==================================================
@@ -220,21 +295,32 @@ img {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+
+    grid-template-columns:
+        1.2fr 0.8fr;
+
     gap: 60px;
+
     align-items: start;
 }
 
 .about-text p {
     color: #adbbcc;
+
     margin-bottom: 18px;
+
     font-size: 1.03rem;
 }
 
 .about-card {
     background: #101e30;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
     padding: 28px;
+
     border-radius: 16px;
 }
 
@@ -244,49 +330,68 @@ img {
 
 .about-card p {
     margin-bottom: 12px;
+
     color: #aab8ca;
 }
 
 
+
 /* ==================================================
-   PROJECT CARDS
+   HOMEPAGE PROJECT CARDS
 ================================================== */
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
     gap: 24px;
 }
 
 .project-card {
     background: #101e30;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
     border-radius: 18px;
+
     padding: 28px;
+
     transition: 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(56, 189, 248, 0.5);
+
+    border-color:
+        rgba(56, 189, 248, 0.5);
 }
 
 .project-number {
     color: #38bdf8;
+
     font-size: 0.85rem;
+
     font-weight: 700;
+
     margin-bottom: 16px;
 }
 
 .project-card h3 {
     font-size: 1.35rem;
+
     margin-bottom: 12px;
 }
 
 .project-card p {
     color: #9eafc2;
+
     margin-bottom: 20px;
 }
+
 
 
 /* ==================================================
@@ -295,17 +400,25 @@ img {
 
 .tags {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 8px;
 }
 
 .tag {
     padding: 6px 10px;
+
     border-radius: 20px;
-    background: rgba(56, 189, 248, 0.1);
+
+    background:
+        rgba(56, 189, 248, 0.1);
+
     color: #7dd3fc;
+
     font-size: 0.8rem;
 }
+
 
 
 /* ==================================================
@@ -314,14 +427,22 @@ img {
 
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
     gap: 24px;
 }
 
 .research-card {
     padding: 28px;
+
     background: #101e30;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
     border-radius: 16px;
 }
 
@@ -334,25 +455,35 @@ img {
 }
 
 
+
 /* ==================================================
    SKILLS
 ================================================== */
 
 .skill-groups {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 22px;
 }
 
 .skill-box {
     background: #101e30;
+
     padding: 24px;
+
     border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
 }
 
 .skill-box h3 {
     color: #7dd3fc;
+
     margin-bottom: 12px;
 }
 
@@ -361,22 +492,31 @@ img {
 }
 
 
+
 /* ==================================================
    CONTACT
 ================================================== */
 
 .contact-box {
     max-width: 760px;
+
     background: #101e30;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
     border-radius: 18px;
+
     padding: 36px;
 }
 
 .contact-box p {
     color: #a9b8c9;
+
     margin-bottom: 24px;
 }
+
 
 
 /* ==================================================
@@ -385,82 +525,243 @@ img {
 
 footer {
     padding: 32px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
     color: #7f90a4;
+
     font-size: 0.9rem;
 }
 
 
+
 /* ==================================================
-   PROJECT DETAIL PAGE
+   KITCHEN GARDEN PROJECT PAGE
 ================================================== */
 
 .project-hero {
-    padding-top: 90px;
+    padding: 95px 0 55px;
+
+    position: relative;
+}
+
+.project-back-link {
+    display: inline-block;
+
+    color: #8ca0b6;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 50px;
+
+    transition: 0.25s ease;
+}
+
+.project-back-link:hover {
+    color: #38bdf8;
 }
 
 .project-page-title {
-    font-size: clamp(3rem, 7vw, 5.5rem);
-    line-height: 1;
-    margin-bottom: 18px;
-    letter-spacing: -0.04em;
-}
+    font-size:
+        clamp(3.5rem, 8vw, 6.2rem);
 
-.project-subtitle {
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    font-weight: 500;
-    color: #a9bad0;
+    line-height: 0.95;
+
+    letter-spacing: -0.05em;
+
     margin-bottom: 24px;
 }
 
+.project-subtitle {
+    max-width: 800px;
 
-/* ==================================================
-   PROJECT MAIN IMAGE
-================================================== */
+    font-size:
+        clamp(1.4rem, 3vw, 2rem);
 
-.project-main-image {
-    width: 100%;
-    max-height: 680px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin-top: 50px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    font-weight: 500;
+
+    color: #b5c5d7;
+
+    margin-bottom: 24px;
+}
+
+.project-intro {
+    max-width: 760px;
+
+    font-size: 1.1rem;
+
+    color: #9eafc2;
+
+    line-height: 1.8;
 }
 
 
+
 /* ==================================================
-   PROJECT INFO GRID
+   KITCHEN GARDEN IMAGE
+================================================== */
+
+.project-image-section {
+    padding: 0 0 70px;
+}
+
+.project-main-image {
+    width: 100%;
+
+    max-height: 720px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    background: #0a1626;
+
+    border-radius: 20px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* ==================================================
+   PROJECT INFORMATION
 ================================================== */
 
 .project-info-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
 }
 
 .project-info-box {
+    min-height: 130px;
+
     background: #101e30;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    border-radius: 15px;
+
     padding: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
 }
 
 .project-info-box span {
-    display: block;
-    color: #7f90a4;
-    font-size: 0.8rem;
+    color: #71839a;
+
+    font-size: 0.75rem;
+
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 8px;
+
+    letter-spacing: 0.1em;
+
+    margin-bottom: 12px;
 }
 
 .project-info-box strong {
-    color: #e7edf5;
     font-size: 1rem;
+
     line-height: 1.4;
 }
+
+
+
+/* ==================================================
+   PROJECT TEXT
+================================================== */
+
+.project-text {
+    max-width: 820px;
+}
+
+.project-text p {
+    color: #a7b6c8;
+
+    font-size: 1.05rem;
+
+    line-height: 1.85;
+
+    margin-bottom: 22px;
+}
+
+
+
+/* ==================================================
+   CONTRIBUTION CARDS
+================================================== */
+
+.contribution-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.contribution-card {
+    background: #101e30;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    border-radius: 17px;
+
+    padding: 30px;
+
+    transition: 0.3s ease;
+}
+
+.contribution-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(56, 189, 248, 0.4);
+}
+
+.contribution-number {
+    color: #38bdf8;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    margin-bottom: 18px;
+}
+
+.contribution-card h3 {
+    font-size: 1.25rem;
+
+    margin-bottom: 12px;
+}
+
+.contribution-card p {
+    color: #9eafc2;
+
+    line-height: 1.75;
+}
+
 
 
 /* ==================================================
@@ -469,44 +770,68 @@ footer {
 
 .development-flow {
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
+
+    gap: 10px;
+
+    margin-top: 15px;
 }
 
 .flow-step {
+    flex: 1;
+
+    min-width: 110px;
+
     background: #101e30;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
     border-radius: 14px;
-    padding: 20px;
-    min-width: 130px;
+
+    padding: 20px 14px;
+
     text-align: center;
 }
 
 .flow-step span {
     display: block;
+
     color: #38bdf8;
-    font-size: 0.75rem;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
     margin-bottom: 6px;
 }
 
 .flow-step strong {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .flow-arrow {
     color: #38bdf8;
-    font-size: 1.4rem;
+
+    font-size: 1.35rem;
 }
 
 .development-description {
-    max-width: 800px;
-    margin-top: 40px;
-    color: #a9b8c9;
+    max-width: 760px;
+
+    color: #9eafc2;
+
     font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    margin-top: 40px;
 }
+
 
 
 /* ==================================================
@@ -514,26 +839,102 @@ footer {
 ================================================== */
 
 .architecture-placeholder {
-    min-height: 260px;
+    min-height: 300px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
-    background: #101e30;
-    border: 1px dashed rgba(56, 189, 248, 0.4);
-    border-radius: 18px;
-    color: #7dd3fc;
+
     text-align: center;
+
+    background: #101e30;
+
+    border:
+        1px dashed
+        rgba(56, 189, 248, 0.4);
+
+    border-radius: 18px;
+
     padding: 30px;
+
+    color: #7dd3fc;
 }
+
+.architecture-placeholder strong {
+    display: block;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 8px;
+}
+
+.architecture-placeholder p {
+    color: #7f90a4;
+}
+
 
 
 /* ==================================================
-   BACK SECTION
+   TECHNOLOGY SECTION
 ================================================== */
 
-.project-back-section {
-    padding: 50px 0 80px;
+.project-tags {
+    margin-bottom: 28px;
 }
+
+.technology-note {
+    max-width: 700px;
+
+    color: #8fa1b5;
+
+    line-height: 1.8;
+}
+
+
+
+/* ==================================================
+   FUTURE DOCUMENTATION
+================================================== */
+
+.future-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.future-card {
+    background: #101e30;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    color: #9eafc2;
+
+    text-align: center;
+}
+
+
+
+/* ==================================================
+   PROJECT BOTTOM NAVIGATION
+================================================== */
+
+.project-bottom-nav {
+    padding: 60px 0 80px;
+
+    background: #07111f;
+}
+
 
 
 /* ==================================================
@@ -543,17 +944,35 @@ footer {
 @media (max-width: 1000px) {
 
     .hero h1 {
-        font-size: clamp(3rem, 7vw, 4.7rem);
+        font-size:
+            clamp(3rem, 7vw, 4.7rem);
     }
 
     .skill-groups {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .project-info-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
+
+    .development-flow {
+        flex-wrap: wrap;
+    }
+
+    .flow-arrow {
+        display: none;
+    }
+
+    .flow-step {
+        flex-basis:
+            calc(33.333% - 12px);
+    }
+
 }
+
 
 
 /* ==================================================
@@ -570,6 +989,9 @@ footer {
         display: none;
     }
 
+
+    /* HOME HERO */
+
     .hero {
         min-height: 82vh;
     }
@@ -580,7 +1002,10 @@ footer {
 
     .hero h1 {
         white-space: normal;
-        font-size: clamp(2.8rem, 12vw, 4rem);
+
+        font-size:
+            clamp(2.8rem, 12vw, 4rem);
+
         line-height: 1.05;
     }
 
@@ -592,10 +1017,15 @@ footer {
         font-size: 1rem;
     }
 
+
+    /* GRID SECTIONS */
+
     .about-grid,
     .project-grid,
     .research-grid,
-    .skill-groups {
+    .skill-groups,
+    .contribution-grid,
+    .future-grid {
         grid-template-columns: 1fr;
     }
 
@@ -611,37 +1041,76 @@ footer {
     .research-card,
     .skill-box,
     .about-card,
-    .contact-box {
+    .contact-box,
+    .contribution-card {
         padding: 22px;
     }
 
-    .project-page-title {
-        font-size: clamp(2.8rem, 12vw, 4rem);
+
+    /* PROJECT PAGE */
+
+    .project-hero {
+        padding:
+            65px 0 40px;
     }
+
+    .project-back-link {
+        margin-bottom: 35px;
+    }
+
+    .project-page-title {
+        font-size:
+            clamp(3rem, 15vw, 4.5rem);
+    }
+
+    .project-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .project-intro {
+        font-size: 1rem;
+    }
+
+
+    /* IMAGE */
+
+    .project-image-section {
+        padding-bottom: 45px;
+    }
+
+    .project-main-image {
+        border-radius: 14px;
+    }
+
+
+    /* INFO */
 
     .project-info-grid {
         grid-template-columns: 1fr;
     }
 
-    .development-flow {
-        flex-direction: column;
-        align-items: stretch;
-    }
 
-    .flow-arrow {
-        transform: rotate(90deg);
-        text-align: center;
+    /* DEVELOPMENT */
+
+    .development-flow {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
     }
 
     .flow-step {
         width: 100%;
     }
 
-    .project-main-image {
-        margin-top: 35px;
-        border-radius: 14px;
+    .flow-arrow {
+        display: none;
     }
+
 }
+
 
 
 /* ==================================================
@@ -661,6 +1130,7 @@ footer {
 
     .eyebrow {
         font-size: 0.72rem;
+
         letter-spacing: 0.1em;
     }
 
@@ -674,11 +1144,13 @@ footer {
 
     .hero-buttons {
         flex-direction: column;
+
         align-items: flex-start;
     }
 
     .btn {
         width: 100%;
+
         text-align: center;
     }
 
@@ -686,19 +1158,23 @@ footer {
         padding: 60px 0;
     }
 
-    .project-page-title {
-        font-size: 2.7rem;
-    }
 
-    .project-main-image {
-        margin-top: 28px;
+    /* PROJECT */
+
+    .project-page-title {
+        font-size: 3rem;
     }
 
     .project-info-box {
-        padding: 20px;
+        min-height: auto;
+    }
+
+    .development-flow {
+        grid-template-columns: 1fr;
     }
 
     .architecture-placeholder {
-        min-height: 200px;
+        min-height: 220px;
     }
+
 }
