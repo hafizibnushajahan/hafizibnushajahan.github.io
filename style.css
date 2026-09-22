@@ -25,7 +25,10 @@ a {
     margin: auto;
 }
 
-/* NAVIGATION */
+
+/* =========================
+   NAVIGATION
+========================= */
 
 .navbar {
     position: sticky;
@@ -66,7 +69,10 @@ a {
     color: #ffffff;
 }
 
-/* HERO */
+
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero {
     min-height: 88vh;
@@ -90,7 +96,7 @@ a {
 
 .hero-content {
     position: relative;
-    max-width: 850px;
+    max-width: 950px;
 }
 
 .eyebrow {
@@ -102,11 +108,14 @@ a {
     margin-bottom: 18px;
 }
 
+/* FIXED NAME SIZE */
+
 .hero h1 {
-    font-size: clamp(3rem, 8vw, 6rem);
-    line-height: 1;
+    font-size: clamp(3rem, 6vw, 5.2rem);
+    line-height: 1.05;
     margin-bottom: 20px;
     letter-spacing: -0.04em;
+    white-space: nowrap;
 }
 
 .hero h2 {
@@ -157,7 +166,10 @@ a {
     color: #38bdf8;
 }
 
-/* GENERAL SECTIONS */
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 .section {
     padding: 100px 0;
@@ -190,7 +202,10 @@ a {
     max-width: 700px;
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT
+========================= */
 
 .about-grid {
     display: grid;
@@ -221,7 +236,10 @@ a {
     color: #aab8ca;
 }
 
-/* PROJECTS */
+
+/* =========================
+   PROJECTS
+========================= */
 
 .project-grid {
     display: grid;
@@ -273,7 +291,10 @@ a {
     font-size: 0.8rem;
 }
 
-/* RESEARCH */
+
+/* =========================
+   RESEARCH
+========================= */
 
 .research-grid {
     display: grid;
@@ -296,7 +317,10 @@ a {
     color: #a4b3c5;
 }
 
-/* SKILLS */
+
+/* =========================
+   SKILLS
+========================= */
 
 .skill-groups {
     display: grid;
@@ -320,7 +344,10 @@ a {
     color: #a8b7c8;
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact-box {
     max-width: 760px;
@@ -335,7 +362,10 @@ a {
     margin-bottom: 24px;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     padding: 32px 0;
@@ -344,16 +374,57 @@ footer {
     font-size: 0.9rem;
 }
 
-/* MOBILE */
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero h1 {
+        font-size: clamp(3rem, 7vw, 4.7rem);
+    }
+
+    .skill-groups {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
+
+    .nav-container {
+        min-height: 64px;
+    }
 
     .nav-links {
         display: none;
     }
 
     .hero {
-        min-height: 80vh;
+        min-height: 82vh;
+    }
+
+    .hero-content {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        white-space: normal;
+        font-size: clamp(2.8rem, 12vw, 4rem);
+        line-height: 1.05;
+    }
+
+    .hero h2 {
+        font-size: 1.45rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
     }
 
     .about-grid,
@@ -365,5 +436,61 @@ footer {
 
     .section {
         padding: 75px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 36px;
+    }
+
+    .project-card,
+    .research-card,
+    .skill-box,
+    .about-card,
+    .contact-box {
+        padding: 22px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .container,
+    .nav-container {
+        width: 92%;
+    }
+
+    .hero {
+        min-height: 78vh;
+    }
+
+    .eyebrow {
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 60px 0;
     }
 }
