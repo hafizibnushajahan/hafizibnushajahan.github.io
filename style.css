@@ -41,9 +41,6 @@ img {
     margin: 0 auto;
 }
 
-
-/* Prevent sticky navbar from covering anchors */
-
 section,
 article[id] {
     scroll-margin-top: 90px;
@@ -76,18 +73,21 @@ button:focus-visible {
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
 }
 
 .nav-container {
     width: min(1120px, 90%);
+
     min-height: 72px;
 
     margin: 0 auto;
 
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -107,6 +107,7 @@ button:focus-visible {
 
 .nav-links {
     display: flex;
+
     align-items: center;
 
     gap: 28px;
@@ -132,10 +133,11 @@ button:focus-visible {
 .hero {
     min-height: 88svh;
 
-    position: relative;
-
     display: flex;
+
     align-items: center;
+
+    position: relative;
 
     overflow: hidden;
 }
@@ -144,6 +146,7 @@ button:focus-visible {
     content: "";
 
     position: absolute;
+
     inset: 0;
 
     background:
@@ -158,6 +161,7 @@ button:focus-visible {
 
 .hero-content {
     position: relative;
+
     z-index: 2;
 
     max-width: 1050px;
@@ -169,6 +173,7 @@ button:focus-visible {
     color: #38bdf8;
 
     font-size: 0.85rem;
+
     font-weight: 600;
 
     letter-spacing: 0.12em;
@@ -179,7 +184,8 @@ button:focus-visible {
 .hero h1 {
     margin-bottom: 20px;
 
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size:
+        clamp(3rem, 6vw, 5.5rem);
 
     line-height: 1;
 
@@ -191,7 +197,8 @@ button:focus-visible {
 
     color: #a9bad0;
 
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size:
+        clamp(1.2rem, 3vw, 2rem);
 
     font-weight: 500;
 }
@@ -229,6 +236,7 @@ button:focus-visible {
 
 .btn-primary {
     background: #38bdf8;
+
     color: #06121f;
 }
 
@@ -243,7 +251,8 @@ button:focus-visible {
 
     color: #eaf2fa;
 
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border:
+        1px solid rgba(255, 255, 255, 0.18);
 }
 
 .btn-secondary:hover {
@@ -275,6 +284,7 @@ button:focus-visible {
     color: #38bdf8;
 
     font-size: 0.85rem;
+
     font-weight: 600;
 
     letter-spacing: 0.12em;
@@ -286,7 +296,8 @@ button:focus-visible {
 .section-heading h2 {
     margin-top: 8px;
 
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size:
+        clamp(2rem, 5vw, 3rem);
 
     line-height: 1.2;
 }
@@ -304,19 +315,17 @@ button:focus-visible {
 
 /* =========================================================
    SECTION ACTION BUTTONS
-
-   View All Projects
-   View All Research
 ========================================================= */
 
 .section-actions {
     width: 100%;
 
-    margin-top: 42px;
+    margin-top: 36px;
 
     display: flex;
 
-    justify-content: center;
+    justify-content: flex-start;
+
     align-items: center;
 }
 
@@ -328,7 +337,8 @@ button:focus-visible {
 .about-grid {
     display: grid;
 
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns:
+        1.2fr 0.8fr;
 
     gap: 60px;
 
@@ -354,7 +364,8 @@ button:focus-visible {
 
     background: #101e30;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 16px;
 }
@@ -373,15 +384,14 @@ button:focus-visible {
 
 
 /* =========================================================
-   HOMEPAGE PROJECT PREVIEW
-
-   Used only by the normal project cards on index.html
+   HOMEPAGE PROJECT CARDS
 ========================================================= */
 
 .project-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
     gap: 24px;
 }
@@ -391,7 +401,8 @@ button:focus-visible {
 
     background: #101e30;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 18px;
 
@@ -404,7 +415,8 @@ button:focus-visible {
 .project-card:hover {
     transform: translateY(-4px);
 
-    border-color: rgba(56, 189, 248, 0.4);
+    border-color:
+        rgba(56, 189, 248, 0.4);
 }
 
 .project-number {
@@ -413,6 +425,7 @@ button:focus-visible {
     color: #38bdf8;
 
     font-size: 0.85rem;
+
     font-weight: 700;
 }
 
@@ -448,7 +461,8 @@ button:focus-visible {
 .tag {
     padding: 6px 11px;
 
-    background: rgba(56, 189, 248, 0.1);
+    background:
+        rgba(56, 189, 248, 0.1);
 
     color: #7dd3fc;
 
@@ -472,9 +486,6 @@ button:focus-visible {
     margin-bottom: 55px;
 }
 
-
-/* One project per row */
-
 .projects-page .project-grid {
     display: flex;
 
@@ -485,7 +496,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   PROJECTS PAGE CARD
+   PROJECTS PAGE CARDS
 ========================================================= */
 
 .projects-page .project-card {
@@ -507,7 +518,8 @@ button:focus-visible {
 
     background: #101e30;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 20px;
 
@@ -522,15 +534,17 @@ button:focus-visible {
 .projects-page .project-card:hover {
     transform: translateY(-4px);
 
-    border-color: rgba(56, 189, 248, 0.45);
+    border-color:
+        rgba(56, 189, 248, 0.45);
 
     box-shadow:
-        0 20px 55px rgba(0, 0, 0, 0.18);
+        0 20px 55px
+        rgba(0, 0, 0, 0.18);
 }
 
 
 /* =========================================================
-   PROJECT PAGE TEXT
+   PROJECT TEXT
 ========================================================= */
 
 .projects-page .project-text {
@@ -549,6 +563,7 @@ button:focus-visible {
     color: #38bdf8;
 
     font-size: 0.9rem;
+
     font-weight: 700;
 
     letter-spacing: 0.04em;
@@ -559,7 +574,8 @@ button:focus-visible {
 
     color: #e7edf5;
 
-    font-size: clamp(1.75rem, 3vw, 2.3rem);
+    font-size:
+        clamp(1.75rem, 3vw, 2.3rem);
 
     line-height: 1.2;
 
@@ -580,11 +596,12 @@ button:focus-visible {
 
 
 /* =========================================================
-   PROJECT IMAGE
+   PROJECT IMAGES
 ========================================================= */
 
 .projects-page .project-image {
     width: 100%;
+
     height: 100%;
 
     min-height: 290px;
@@ -593,38 +610,43 @@ button:focus-visible {
 
     background: #081522;
 
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border:
+        1px solid rgba(255, 255, 255, 0.06);
 
     border-radius: 16px;
 }
 
 .projects-page .project-image img {
     width: 100%;
+
     height: 100%;
 
     min-height: 290px;
 
     object-fit: cover;
+
     object-position: center;
 
-    transition: transform 0.45s ease;
+    transition:
+        transform 0.45s ease;
 }
 
-.projects-page .project-card:hover .project-image img {
+.projects-page
+.project-card:hover
+.project-image img {
     transform: scale(1.025);
 }
 
 
 /* =========================================================
    PROJECT IMAGE PLACEHOLDER
-
-   Used until remaining project images are uploaded
 ========================================================= */
 
 .project-image-placeholder {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     background:
@@ -647,13 +669,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   ALTERNATING PROJECT PAGE LAYOUT
-
-   Project 01: Text  | Image
-   Project 02: Image | Text
-   Project 03: Text  | Image
-   Project 04: Image | Text
-   Project 05: Text  | Image
+   ALTERNATING PROJECT LAYOUT
 ========================================================= */
 
 .projects-page
@@ -670,7 +686,8 @@ button:focus-visible {
 .research-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
     gap: 24px;
 }
@@ -680,20 +697,21 @@ button:focus-visible {
 
     background: #101e30;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 16px;
 
     transition:
         transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+        border-color 0.3s ease;
 }
 
 .research-card:hover {
     transform: translateY(-4px);
 
-    border-color: rgba(56, 189, 248, 0.4);
+    border-color:
+        rgba(56, 189, 248, 0.4);
 }
 
 .research-card h3 {
@@ -718,7 +736,8 @@ button:focus-visible {
 .skill-groups {
     display: grid;
 
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
 
     gap: 22px;
 }
@@ -728,7 +747,8 @@ button:focus-visible {
 
     background: #101e30;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 14px;
 
@@ -740,7 +760,8 @@ button:focus-visible {
 .skill-box:hover {
     transform: translateY(-4px);
 
-    border-color: rgba(56, 189, 248, 0.35);
+    border-color:
+        rgba(56, 189, 248, 0.35);
 }
 
 .skill-box h3 {
@@ -780,7 +801,8 @@ button:focus-visible {
 
     background: #101e30;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 18px;
 
@@ -791,6 +813,7 @@ button:focus-visible {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     flex-wrap: wrap;
@@ -817,7 +840,8 @@ button:focus-visible {
 .contact-email a {
     color: #a9b8c9;
 
-    transition: color 0.25s ease;
+    transition:
+        color 0.25s ease;
 }
 
 .contact-email a:hover {
@@ -836,7 +860,8 @@ footer {
 
     font-size: 0.9rem;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top:
+        1px solid rgba(255, 255, 255, 0.08);
 }
 
 
@@ -845,8 +870,6 @@ footer {
 ========================================================= */
 
 @media (max-width: 950px) {
-
-    /* PROJECT DETAIL PAGE */
 
     .projects-page .project-card {
         grid-template-columns: 1fr;
@@ -858,49 +881,36 @@ footer {
         padding: 28px;
     }
 
-
-    /*
-       Stop alternating on smaller screens.
-
-       Text
-       Image
-    */
-
     .projects-page
     .project-card:nth-child(even)
     .project-image {
         order: initial;
     }
 
-
     .projects-page .project-image {
-        height: 340px;
-
         min-height: 340px;
+
+        height: 340px;
     }
 
     .projects-page .project-image img {
-        height: 340px;
-
         min-height: 340px;
+
+        height: 340px;
     }
 
-
-    /* SKILLS */
-
     .skill-groups {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
     }
 }
 
 
 /* =========================================================
-   TABLET / MOBILE
+   MOBILE
 ========================================================= */
 
 @media (max-width: 800px) {
-
-    /* NAVIGATION */
 
     .nav-links {
         gap: 14px;
@@ -923,25 +933,20 @@ footer {
     }
 
 
-    /* HERO */
-
     .hero {
         min-height: 80svh;
     }
 
     .hero h1 {
-        font-size: clamp(2.6rem, 11vw, 4.5rem);
+        font-size:
+            clamp(2.6rem, 11vw, 4.5rem);
     }
 
-
-    /* GENERAL */
 
     .section {
         padding: 75px 0;
     }
 
-
-    /* HOMEPAGE GRIDS */
 
     .about-grid,
     .project-grid,
@@ -949,15 +954,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
-    /* ABOUT */
-
     .about-grid {
         gap: 35px;
     }
 
-
-    /* PROJECT PAGE */
 
     .projects-page {
         padding-top: 65px;
@@ -979,8 +979,6 @@ footer {
         font-size: 1rem;
     }
 
-
-    /* CONTACT */
 
     .contact-box {
         padding: 30px 22px;
@@ -1016,8 +1014,6 @@ footer {
     }
 
 
-    /* NAVIGATION */
-
     .nav-container {
         gap: 20px;
     }
@@ -1027,14 +1023,13 @@ footer {
     }
 
 
-    /* HERO */
-
     .hero {
         min-height: 76svh;
     }
 
     .hero h1 {
-        font-size: clamp(2.35rem, 12vw, 2.9rem);
+        font-size:
+            clamp(2.35rem, 12vw, 2.9rem);
     }
 
     .hero h2 {
@@ -1052,14 +1047,17 @@ footer {
     }
 
 
-    /* GENERAL HEADINGS */
-
     .section-heading {
         margin-bottom: 38px;
     }
 
 
-    /* PROJECT PAGE CARDS */
+    .section-actions {
+        margin-top: 30px;
+
+        justify-content: flex-start;
+    }
+
 
     .projects-page .project-card {
         padding: 20px;
@@ -1092,21 +1090,19 @@ footer {
     }
 
     .projects-page .project-image {
-        height: 220px;
-
         min-height: 220px;
+
+        height: 220px;
 
         border-radius: 12px;
     }
 
     .projects-page .project-image img {
-        height: 220px;
-
         min-height: 220px;
+
+        height: 220px;
     }
 
-
-    /* TAGS */
 
     .tag {
         padding: 5px 9px;
@@ -1115,21 +1111,13 @@ footer {
     }
 
 
-    /* SECTION BUTTONS */
-
-    .section-actions {
-        margin-top: 32px;
-    }
-
-
-    /* CONTACT */
-
     .contact-buttons {
         width: 100%;
 
         display: grid;
 
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
 
         gap: 12px;
     }
@@ -1163,12 +1151,16 @@ footer {
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
+        animation-duration:
+            0.01ms !important;
 
-        animation-iteration-count: 1 !important;
+        animation-iteration-count:
+            1 !important;
 
-        transition-duration: 0.01ms !important;
+        transition-duration:
+            0.01ms !important;
 
-        scroll-behavior: auto !important;
+        scroll-behavior:
+            auto !important;
     }
 }
